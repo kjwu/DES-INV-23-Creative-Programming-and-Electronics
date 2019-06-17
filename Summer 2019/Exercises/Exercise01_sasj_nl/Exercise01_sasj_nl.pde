@@ -4,15 +4,14 @@ drawing inspired by sasj_nl
 
 color[] colors = {#00D9EA,#EAAC00,#FAFAFA,#1C1C1C};
 float gridSize = 20;
-
+int frameIndex = 0;
 
 void setup(){
   size(800,800);
   frameRate(10);
-}
-
-void draw(){
-    for(float y = gridSize; y<height; y+=gridSize){
+      
+    
+   for(float y = gridSize; y<height; y+=gridSize){
     for(float x = gridSize; x<width; x+=gridSize){
       pushMatrix();
       translate(x,y);
@@ -45,6 +44,10 @@ void draw(){
       
     }
   }
+}
+
+void draw(){
+
 }
 
 void drawCircle(float cw, float ch){
