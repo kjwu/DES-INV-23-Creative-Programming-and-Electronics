@@ -38,7 +38,7 @@ void halfNote(){
     digitalWrite(solenoidPin,HIGH);
     delay(50);
     digitalWrite(solenoidPin, LOW);
-    delay(bpm/60*1000*2-50);
+    delay(bpm/60*1000*2-50  );
   }
 
 void quarterNote(){
