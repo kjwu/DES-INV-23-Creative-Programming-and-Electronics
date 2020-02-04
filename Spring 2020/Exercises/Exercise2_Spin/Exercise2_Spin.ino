@@ -30,6 +30,8 @@ void setup() {
 
 void loop() {
   //use lastTriggeredTime to keep track of time
+  //It change the speed direction once every 
+  //second.
   if(millis()-lastTriggeredTime1>1000){
     spd1*=-1;
     lastTriggeredTime1 = millis();
@@ -47,7 +49,12 @@ void loop() {
 }
 
 
-//motor control functions 
+//motor control functions.
+//it takes a parameter of speed.
+//if the speed value is positive, then the motor 
+//spin forward, whereas if it is negative
+//the motor spin backward.
+
 void moveMotor1(float spd){
   if(spd>0){
     digitalWrite(dirPinA1,HIGH);
