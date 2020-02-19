@@ -39,7 +39,7 @@ void loop() {
 
   if(millis()-lastTriggeredTime2>2000){
     spd2*=-1;
-    llastTriggeredTime2 = millis();
+    lastTriggeredTime2 = millis();
   }  
   
 
