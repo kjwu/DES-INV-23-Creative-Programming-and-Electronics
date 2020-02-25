@@ -17,7 +17,7 @@ void loop()
   {
     delay(500);
     pos = -pos;
-    stepper.moveTo(pos);\
-  }
+    stepper.moveTo(pos);
+  } 
   stepper.run();
 }
