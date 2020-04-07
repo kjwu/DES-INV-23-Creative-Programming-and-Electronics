@@ -33,8 +33,6 @@ void setup(){
       
       
       
-      
-      
       fill(colors[floor(random(4))]); //random number 0 - 3.9999
       drawDimond(gridSize,gridSize);
       fill(colors[floor(random(4))]); //random number 0 - 3.9999
