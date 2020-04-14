@@ -7,7 +7,7 @@ int n[] = new int[arraySize];
 float dotSizeDelta = 0;
 
 void setup(){
-  size(800,800, P2D);
+  size(800,800);
   
   for(int i = 0 ; i < arraySize; i++){
     r[i] = (i+1)*30;
